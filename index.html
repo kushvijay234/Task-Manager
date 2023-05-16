@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Task Manager</h1>
+    </header>
+    <main>
+      <div id="task">
+        <button id="add-task-btn">Add Task</button>
+      </div>
+      <div class="task-list">
+        <ul id="task-list"></ul>
+      </div>
+    </main>
+    <div id="task-popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <form id="task-form">
+          <input type="text" id="task-input" placeholder="Task Name..." />
+          <input type="date" id="date-input" placeholder="Enter date..." />
+          <input type="time" id="time-input" placeholder="Enter time..." />
+          <textarea
+            id="description-input"
+            placeholder="Enter description..."
+          ></textarea>
+          <button type="submit">Create Task</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
